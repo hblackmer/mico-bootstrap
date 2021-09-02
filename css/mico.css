@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #5B92AB;
+    font-family: 'Inconsolata', monospace;
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: 2em;
+}
+
+/* Navigation CSS */
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+.nav-link:hover {
+    transition: border 0.2s;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+.nav-item {
+    font-weight: 1000;
+}
+
+/* Font CSS */
+.font-incon {
+    font-family: 'Inconsolata', monospace;
+}
+.font-mont {
+    font-family: 'Montserrat', sans-serif;
+}
+.mico-color-1 {
+    color: #0C2746;
+}
+.mico-color-2 {
+    color: #22476B;
+}
+.mico-color-3 {
+    color: #406E8E;
+}
+.mico-color-4 {
+    color: #5B92AB;
+}
+
+/* Header CSS */
+#showcase {
+    height: 100vh;
+    background: url("../img/mico/desktop.jpeg") bottom center / cover no-repeat;
+    position: relative;
+}
+#header {
+    z-index: 2;
+}
+#overlay {
+    background: rgba(0,0,0,0.15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#header-name {
+    font-size: 7.5em;
+}
+
+@media(max-width: 768px) {
+    .navbar {
+        background: #1f1f1f;
+    }
+    #showcase {
+        min-height: 300px;
+    }
+}
+
+/* About CSS */
+.img-about {
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+/* Study CSS */
+#showcase_study {
+    height: 100vh;
+    background: url("../img/mico/chalkboard.jpg") bottom center / cover no-repeat;
+    position: relative;
+}
+
+/* Footer */
+.footer_icons {
+    margin: 0px 10px;
+}
+.hb_logo {
+   max-width: 70px;
+}
+.linkedin {
+   width: 60px
+}

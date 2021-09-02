@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title with Logo Icon -->
+    <title>Mico | Project by Helene Blackmer</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/ico" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Font-Awesome CSS -->
+    <script src="https://kit.fontawesome.com/2e9b47aa85.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/mico.css">
+</head>
+
+<body>
+    <!-- Navigation and header elements-->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <a href="#" class="navbar-brand"><h3 class="mb-0 text-primary">MICO</h3></a>
+            <button class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item p-3">
+                        <a href="#about" class="nav-link font-mont">About</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a href="mico_study.html" class="nav-link font-mont">Get Started</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link font-mont" data-toggle="modal" data-target="#loginModal">
+                            <i class="fa fa-sign-in"></i> Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm my-2" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm my-2" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-primary btn-sm ml-1 mt-4">Sign in</button>
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto mt-4" data-dismiss="modal">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Top -->
+    <section id="showcase" class="d-flex justify-content-center align-items-center">
+        <div id="overlay"></div>
+        <div id="header" class="container text-white text-center">
+            <h1 class="mb-0 text-primary" id="header-name">MICO</h1>
+            <p class="lead d-none d-md-block white font-mont mico-color-1">test your knowledge</p>
+            <a class="btn btn-primary" href="mico_study.html" role="button">Get Started</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center mb-5">
+            <h2 class="mt-5" id="about">What is Mico?</h2>
+            <div class="row">
+                <div class="col-md-4 p-3">
+                    <img src="img/mico/study.png" alt="A woman studying on her laptop." class="img-fluid img-about d-none d-md-inline">
+                    <h3 class="font-weight-bold mico-color-1">A study tool</h3>
+                    <p class="lead font-mont mico-color-2">Customizable and randomized questions.</p>
+                </div>
+                <div class="col-md-4 p-3">
+                    <img src="img/mico/notepad.png" alt="Notepad with crumpled pages beside it" class="img-fluid img-about d-none d-md-inline">
+                    <h3 class="font-weight-bold mico-color-1">Flash cards</h3>
+                    <p class="lead font-mont mico-color-2">Flash card style questions.</p>
+                </div>
+                <div class="col-md-4 p-3">
+                    <img src="img/mico/hourglass.png" alt="Hourglass next to someone typing on a laptop." class="img-fluid img-about d-none d-md-inline">
+                    <h3 class="font-weight-bold mico-color-1">Tailored for you</h3>
+                    <p class="lead font-mont mico-color-2">Pick difficulty, number of questions, and time constraints.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- Popper JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+<footer class="container">
+    <div class="row">
+        <div class="col d-inline-flex justify-content-center">
+            <!-- Github and Linkedin -->
+            <a href="https://github.com/hblackmer" target="_blank"><img class="footer_icons github" src="img/github_logo.png"></a>
+            <a href="https://www.linkedin.com/in/hblackmer" target="_blank"><img class="footer_icons linkedin" src="img/linkedin_logo.png"></a>
+            <a href="https://heleneblackmer.com" target="_blank"><img class="footer_icons hb_logo" src="img/logo_circle.png"></a>
+        </div>
+    </div>
+</footer>
+</html>
