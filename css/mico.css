@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #5B92AB;
+    background-color: #003366;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -84,11 +84,14 @@ button {
 }
 
 /* About CSS */
+#about {
+    font-size: 4em;
+}
 .img-about {
-    margin-top: -40px;
-    margin-bottom: -40px;
+    margin-bottom: -50px;
     width: 90%;
     height: auto;
+    border-radius: 50%
 }
 
 /* Study CSS */
