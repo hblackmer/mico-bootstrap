@@ -14,7 +14,7 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
     <!-- Font-Awesome CSS -->
     <script src="https://kit.fontawesome.com/2e9b47aa85.js" crossorigin="anonymous"></script>
@@ -25,24 +25,23 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/mico.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Navigation and Header elements-->
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <!-- Navigation and header elements-->
+    <nav class="navbar navbar-expand-md navbar-light">
         <div class="container">
-            <a href="index.html" class="navbar-brand"><h3 class="mb-0 text-primary">MICO</h3></a>
+            <a href="#" class="navbar-brand"><h3 class="mb-0 text-primary">MICO</h3></a>
             <button class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#mainNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item p-3">
-                        <a href="index.html#about" class="nav-link font-mont">About</a>
+                        <a href="#about" class="nav-link font-mont">About</a>
                     </li>
                     <li class="nav-item p-3">
-                        <a href="#" class="nav-link font-mont">Get Started</a>
+                        <a href="mico.html" class="nav-link font-mont">Get Started</a>
                     </li>
                     <li class="nav-item p-3">
                         <a class="nav-link font-mont" data-toggle="modal" data-target="#loginModal">
@@ -93,13 +92,35 @@
     </div>
 
     <!-- Image Top -->
-    <section id="showcase_study" class="d-flex justify-content-center align-items-center">
-        <div id="overlay">
-
-        </div>
+    <section id="showcase" class="d-flex justify-content-center align-items-center">
+        <div id="overlay"></div>
         <div id="header" class="container text-white text-center">
-            <h1 class="display-1 mb-0 text-primary">MICO</h1>
-            <p class="lead d-none d-md-block white">Coming very soon!</p>
+            <h1 class="mb-0 text-primary" id="header-name">MICO</h1>
+            <p class="lead d-none d-md-block white font-mont mico-color-1">test your knowledge</p>
+            <a class="btn btn-primary" href="mico.html" role="button">Get Started</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center mb-5">
+            <h2 class="mt-5" id="about">What is Mico?</h2>
+            <div class="row">
+                <div class="col-md-4 p-3">
+                    <img src="img/study.png" alt="A woman studying on her laptop." class="img-fluid img-about d-none d-md-inline">
+                    <h3 class="font-weight-bold mico-color-1">A study tool</h3>
+                    <p class="lead font-mont mico-color-2">Customizable and randomized questions.</p>
+                </div>
+                <div class="col-md-4 p-3">
+                    <img src="img/notepad.png" alt="Notepad with crumpled pages beside it" class="img-fluid img-about d-none d-md-inline">
+                    <h3 class="font-weight-bold mico-color-1">Flash cards</h3>
+                    <p class="lead font-mont mico-color-2">Flash card style questions.</p>
+                </div>
+                <div class="col-md-4 p-3">
+                    <img src="img/hourglass.png" alt="Hourglass next to someone typing on a laptop." class="img-fluid img-about d-none d-md-inline">
+                    <h3 class="font-weight-bold mico-color-1">Tailored for you</h3>
+                    <p class="lead font-mont mico-color-2">Pick difficulty, number of questions, and time constraints.</p>
+                </div>
+            </div>
         </div>
     </section>
 
