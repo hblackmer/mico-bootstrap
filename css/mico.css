@@ -3,12 +3,10 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     background-color: #003366;
     font-family: 'Inconsolata', monospace;
 }
-
 button {
     border: none;
     background: none;
@@ -73,7 +71,6 @@ button {
 #header-name {
     font-size: 7.5em;
 }
-
 @media(max-width: 768px) {
     .navbar {
         background: #1f1f1f;
@@ -101,13 +98,12 @@ button {
     position: relative;
 }
 
-/* Footer */
-.footer_icons {
-    margin: 0px 10px;
+.media_icons {
+    font-size: 2.5em;
+    color: #a16e83;
+    margin-right: 25px;
 }
 .hb_logo {
-   max-width: 70px;
-}
-.linkedin {
-   width: 60px
-}
+    max-width: 45px;
+    margin-right: 25px;
+ }
