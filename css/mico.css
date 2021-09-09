@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    background-color: #003366;
+    background: linear-gradient( #003366 70%, #406E8E);
     font-family: 'Inconsolata', monospace;
 }
 button {
@@ -36,6 +36,9 @@ button {
 }
 .font-mont {
     font-family: 'Montserrat', sans-serif;
+}
+.font-glory {
+    font-family: 'Glory', sans-serif;
 }
 .mico-color-1 {
     color: #0C2746;
@@ -84,11 +87,10 @@ button {
 #about {
     font-size: 4em;
 }
-.img-about {
-    margin-bottom: -30px;
-    width: 90%;
-    height: auto;
-    border-radius: 50%
+#showcase_about {
+    background: url("../img/question.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 /* Study CSS */
@@ -96,6 +98,19 @@ button {
     height: 100vh;
     background: url("../img/chalkboard.jpg") bottom center / cover no-repeat;
     position: relative;
+}
+.about_icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    margin-top: -3rem;
+    border-radius: 0.5rem;
+}
+.about-bg {
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .media_icons {
