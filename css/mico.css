@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    background: linear-gradient( #003366 70%, #406E8E);
+    background: linear-gradient( #406E8E 70%, #003366);
     font-family: 'Inconsolata', monospace;
 }
 button {
