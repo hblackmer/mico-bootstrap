@@ -1,10 +1,20 @@
+:root {
+    --color-extra-dark-blue: #003366;
+    --color-dark-blue: #0C2746;
+    --color-blue: #22476B;
+    --color-light-blue: #406E8E;
+    --color-extra-light-blue: #5B92AB;
+    --color-pink: #a16e83;
+    --color-dark-grey: #1f1f1f;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body {
-    background: linear-gradient( #406E8E 70%, #003366);
+    background: linear-gradient( var(--color-light-blue) 70%, var(--color-extra-dark-blue));
     font-family: 'Inconsolata', monospace;
 }
 button {
@@ -41,16 +51,16 @@ button {
     font-family: 'Glory', sans-serif;
 }
 .mico-color-1 {
-    color: #0C2746;
+    color: var(--color-dark-blue);
 }
 .mico-color-2 {
-    color: #22476B;
+    color: var(--color-blue);
 }
 .mico-color-3 {
-    color: #406E8E;
+    color: var(--color-light-blue);
 }
 .mico-color-4 {
-    color: #5B92AB;
+    color: var(--color-extra-light-blue);
 }
 
 /* Header CSS */
@@ -76,7 +86,7 @@ button {
 }
 @media(max-width: 768px) {
     .navbar {
-        background: #1f1f1f;
+        background: var(--color-dark-grey);
     }
     #showcase {
         min-height: 300px;
@@ -115,7 +125,7 @@ button {
 
 .media_icons {
     font-size: 2.5em;
-    color: #a16e83;
+    color: var(--color-pink);
     margin-right: 25px;
 }
 .hb_logo {
