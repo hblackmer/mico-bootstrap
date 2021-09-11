@@ -14,7 +14,9 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Montserrat&family=Glory&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Montserrat&family=Glory&display=swap"
+        rel="stylesheet">
 
     <!-- Font-Awesome CSS -->
     <script src="https://kit.fontawesome.com/2e9b47aa85.js" crossorigin="anonymous"></script>
@@ -22,16 +24,19 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/mico.css">
+    <link rel="stylesheet" href="css/mico_test.css">
 </head>
 
 <body>
     <!-- Navigation and Header elements-->
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
-            <a href="index.html" class="navbar-brand"><h3 class="mb-0 text-primary">MICO</h3></a>
+            <a href="index.html" class="navbar-brand">
+                <h3 class="mb-0 text-primary">MICO</h3>
+            </a>
             <button class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#mainNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -67,11 +72,13 @@
                             <div class="form-row">
                                 <div class="form-group col-12">
                                     <label class="sr-only" for="loginEmail">Email address</label>
-                                    <input type="email" class="form-control form-control-sm my-2" id="loginEmail" placeholder="Enter email">
+                                    <input type="email" class="form-control form-control-sm my-2" id="loginEmail"
+                                        placeholder="Enter email">
                                 </div>
                                 <div class="form-group col-12">
                                     <label class="sr-only" for="loginPassword">Password</label>
-                                    <input type="password" class="form-control form-control-sm my-2" id="loginPassword" placeholder="Password">
+                                    <input type="password" class="form-control form-control-sm my-2" id="loginPassword"
+                                        placeholder="Password">
                                 </div>
                                 <div class="col">
                                     <div class="form-check">
@@ -82,7 +89,8 @@
                             </div>
                             <div class="form-row">
                                 <button type="submit" class="btn btn-primary btn-sm ml-1 mt-4">Sign in</button>
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto mt-4" data-dismiss="modal">Sign Up</button>
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto mt-4"
+                                    data-dismiss="modal">Sign Up</button>
                             </div>
                         </form>
                     </div>
@@ -93,6 +101,34 @@
 
     <!-- Image Top -->
     <section id="showcase_study" class="d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="row description">
+                        <h5 class="mb-0 text-success">Category: </h5>
+                    </div>
+                    <div class="row question">
+                        <h2 class="fs-3 text-primary">Question: </h2>
+                        <h4 class="text-white">What are some ways to optimize your webpage files for speed?</h4>
+                    </div>
+                    <form class="answer_textarea">
+                        <div class="row form-group mt-3">
+                            <label for="feedback" class="col-md-2 col-form-label fs-3 text-primary">Answer:</label>
+                            <div class="col-md-10 mt-3">
+                                <textarea class="form-control" id="answer" name="answer" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-3">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-success bg-transparent arrow-size float-end text-success"><i class="far fa-caret-square-right"></i></button>
+                                <button type="submit" class="btn btn-success bg-transparent arrow-size float-end text-success"><i class="far fa-caret-square-left"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- jQuery JavaScript -->
@@ -108,10 +144,12 @@
         <div class="col d-inline-flex justify-content-center mt-5">
             <!-- Main Website, Github and Linkedin -->
             <a href="https://heleneblackmer.com" target="_blank"><img class="footer_icons hb_logo"
-                src="img/logo_circle.png"></a>
+                    src="img/logo_circle.png"></a>
             <a href="https://github.com/hblackmer" target="_blank"><i class="fab fa-github media_icons"></i></a>
-            <a href="https://www.linkedin.com/in/hblackmer" target="_blank"><i class="fab fa-linkedin media_icons"></i></a>
+            <a href="https://www.linkedin.com/in/hblackmer" target="_blank"><i
+                    class="fab fa-linkedin media_icons"></i></a>
         </div>
     </div>
 </footer>
+
 </html>
