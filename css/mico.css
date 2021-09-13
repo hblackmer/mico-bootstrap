@@ -142,6 +142,13 @@ button {
     font-size: 2rem;
     margin-top: -3rem;
     border-radius: 0.5rem;
+    padding-bottom: 100px;
+}
+.about_img {
+    width: 200px;
+    height: 150px;
+    border: 5px solid #5B92AB;
+    border-radius: 0.5rem;
 }
 .about-bg {
     background-color: rgba(255, 255, 255, 0.7);
