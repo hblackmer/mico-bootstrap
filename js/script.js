@@ -2,6 +2,11 @@ $(function () {
     $('#testButton').click(function () {
         $('#testModal').modal('show');
     });
+
+    $('#emailOption').click(function(){
+        var val = $(this).val();
+        $('#hidden_content').slideToggle();
+    });
 });
 
 let currentTab = 0;

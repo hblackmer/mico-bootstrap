@@ -127,11 +127,18 @@
                                 <span class="step"><i class="far fa-clock"></i></span>
                             </div>
                             <div class="tab">
-                                <h5 class="text-white">Email:</h6>
-                                <p> <input placeholder="Email..." oninput="this.className = ''" name="fname"></p>
+                                <label class="control-label text-white"></label>
+                                <div class="controls">
+                                    <div class="form-check form-switch toggle basic-toggle-button">
+                                        <input class="form-check-input" type="checkbox" id="emailOption"
+                                            checked>
+                                        <label class="form-check-label text-white mb-3 h5" for="emailYes">Email me my test results</label>
+                                    </div>
+                                </div>
+                                <p id="hidden_content"> <input placeholder="Email..." oninput="this.className = ''" name="fname"></p>
                             </div>
                             <div class="tab">
-                                <h5 class="text-white my-3">Test Subjects:</h6>
+                                <h5 class="text-white my-3">Test Subjects:</h5>
                                 <div class="row offset-1 justify-content-center mb-5">
                                     <div class="form-check form-switch col">
                                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckHTML"
@@ -151,16 +158,14 @@
                                 </div>
                             </div>
                             <div class="tab">
-                                <h5 class="text-white my-3">Test Length:</h6>
+                                <h5 class="text-white my-3">Test Length:</h5>
                                 <div class="row mb-5">
                                     <input type="radio" class="btn-check" name="testOptions" id="testShort"
                                         autocomplete="off">
                                     <label class="btn btn-primary col mx-3" for="testShort">Short</label>
-
                                     <input type="radio" class="btn-check" name="testOptions" id="testMedium"
                                         autocomplete="off" checked>
                                     <label class="btn btn-primary col mx-3" for="testMedium">Medium</label>
-
                                     <input type="radio" class="btn-check" name="testOptions" id="testLong"
                                         autocomplete="off">
                                     <label class="btn btn-primary col mx-3" for="testLong">Long</label>
