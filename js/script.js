@@ -39,8 +39,6 @@ function nextPrev(n) {
     if (currentTab >= x.length) {
         document.getElementById("nextprevious").style.display = "none";
         document.getElementById("all-steps").style.display = "none";
-        document.getElementById("register").style.display = "none";
-        document.getElementById("text-message").style.display = "block";
     }
     showTab(currentTab);
 }

@@ -45,9 +45,6 @@
                         <a href="#about" class="nav-link font-mont text-primary">About</a>
                     </li>
                     <li class="nav-item p-3">
-                        <a href="mico.html" class="nav-link font-mont text-primary">Get Started</a>
-                    </li>
-                    <li class="nav-item p-3">
                         <a class="nav-link font-mont text-primary" data-toggle="modal" data-target="#loginModal">
                             <i class="fa fa-sign-in"></i> Login
                         </a>
@@ -104,10 +101,100 @@
         <div id="header" class="container text-white text-center">
             <h1 class="mb-0 text-primary" id="header-name">MICO</h1>
             <p class="lead d-none d-md-block white font-mont mico-color-1">test your knowledge</p>
-            <a class="btn btn-primary" href="mico.html" role="button">Get Started</a>
+            <a class="btn btn-primary" id="testButton" href="#" role="button">Get Started</a>
         </div>
     </section>
 
+    <!-- Customize Test Modal -->
+    <div id="testModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Test Customization</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <!-- Test Customization Form -->
+                        <form id="regForm">
+                            <div class="all-steps" id="all-steps">
+                                <span class="step"><i class="fas fa-exclamation-triangle"></i></span>
+                                <span class="step"><i class="far fa-envelope"></i></span>
+                                <span class="step"><i class="fas fa-edit"></i></span>
+                                <span class="step"><i class="far fa-clock"></i></span>
+                            </div>
+                            <div class="tab text-center">
+                                <h3 class="text-danger">DISCLAIMER:</h3>
+                                <h5 class="text-white my-3">Website is in development. The following customization is for demo purposes.</h5>
+                            </div>
+                            <div class="tab">
+                                <label class="control-label text-white"></label>
+                                <div class="controls">
+                                    <div class="form-check form-switch toggle basic-toggle-button">
+                                        <input class="form-check-input" type="checkbox" id="emailOption" checked>
+                                        <label class="form-check-label text-white mb-3 h5" for="emailYes">Email me my
+                                            test results</label>
+                                    </div>
+                                </div>
+                                <p id="hidden_content"> <input placeholder="Email..." oninput="this.className = ''"
+                                        name="fname"></p>
+                            </div>
+                            <div class="tab">
+                                <h5 class="text-white my-3">Test Subjects:</h5>
+                                <div class="row offset-1 justify-content-center mb-5">
+                                    <div class="form-check form-switch col">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckHTML"
+                                            checked>
+                                        <label class="form-check-label text-white"
+                                            for="flexSwitchCheckChecked">HTML</label>
+                                    </div>
+                                    <div class="form-check form-switch col">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckCSS" checked>
+                                        <label class="form-check-label text-white"
+                                            for="flexSwitchCheckChecked">CSS</label>
+                                    </div>
+                                    <div class="form-check form-switch col">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckJavaScript"
+                                            checked>
+                                        <label class="form-check-label text-white"
+                                            for="flexSwitchCheckChecked">JavaScript</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <h5 class="text-white my-3">Test Length:</h5>
+                                <div class="row mb-5">
+                                    <input type="radio" class="btn-check" name="testOptions" id="testShort"
+                                        autocomplete="off">
+                                    <label class="btn btn-primary col mx-3" for="testShort">Short</label>
+                                    <input type="radio" class="btn-check" name="testOptions" id="testMedium"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-primary col mx-3" for="testMedium">Medium</label>
+                                    <input type="radio" class="btn-check" name="testOptions" id="testLong"
+                                        autocomplete="off">
+                                    <label class="btn btn-primary col mx-3" for="testLong">Long</label>
+                                </div>
+                            </div>
+                            <div class="tab text-center">
+                                <h3 class="text-danger">DISCLAIMER:</h3>
+                                <h5 class="text-white my-3">Website is in development. The next page is for demo purposes.</h5>
+                                <a href="mico_test.html" class="btn btn-danger text-white" role="button"
+                                    id="testButton">Demo</i></a>
+                            </div>
+                            <div style="overflow:auto;" id="nextprevious">
+                                <div style="float:right;"> <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i
+                                            class="fa fa-angle-double-left"></i></button> <button type="button"
+                                        id="nextBtn" onclick="nextPrev(1)"><i
+                                            class="fa fa-angle-double-right"></i></button> </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
     <section>
         <div class="container px-lg-5">
             <h2 class="text-white text-center" id="about">What is Mico?</h2>
@@ -151,6 +238,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- Custom JavaScript -->
     <script src="js/typing.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 <footer class="container">
@@ -158,9 +246,10 @@
         <div class="col d-inline-flex justify-content-center mt-5">
             <!-- Main Website, Github and Linkedin -->
             <a href="https://heleneblackmer.com" target="_blank"><img class="footer_icons hb_logo"
-                src="img/logo_circle.png"></a>
+                    src="img/logo_circle.png"></a>
             <a href="https://github.com/hblackmer" target="_blank"><i class="fab fa-github media_icons"></i></a>
-            <a href="https://www.linkedin.com/in/hblackmer" target="_blank"><i class="fab fa-linkedin media_icons"></i></a>
+            <a href="https://www.linkedin.com/in/hblackmer" target="_blank"><i
+                    class="fab fa-linkedin media_icons"></i></a>
         </div>
     </div>
 </footer>
