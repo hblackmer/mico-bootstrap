@@ -16,7 +16,7 @@
     padding: 0;
 }
 body {
-    background: linear-gradient( var(--color-light-blue) 70%, var(--color-extra-dark-blue));
+    background: linear-gradient( var(--color-extra-dark-blue) 70%, var(--color-light-blue));
     font-family: var(--font-inconsolota);
 }
 button {
@@ -98,6 +98,7 @@ button {
 /* Test Customization Modal */
 .modal-dialog {
     margin-top: 100px;
+    opacity: 0.95;
 }
 .modal-header {
     background-color: var(--color-extra-dark-blue); 
