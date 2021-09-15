@@ -25,8 +25,10 @@ function showTab(n) {
     }
     if (n == (x.length - 1)) {
         document.getElementById("nextBtn").innerHTML = '<i class="fa fa-angle-double-right"></i>';
+        document.getElementById("nextBtn").style.display = "none";
     } else {
         document.getElementById("nextBtn").innerHTML = '<i class="fa fa-angle-double-right"></i>';
+        document.getElementById("nextBtn").style.display = "inline";
     }
     fixStepIndicator(n)
 }

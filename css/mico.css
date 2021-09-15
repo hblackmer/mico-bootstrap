@@ -176,17 +176,17 @@ button:focus {
     align-items: center;
     font-size: 40px;
     color: var(--color-extra-dark-blue);
-    opacity: 0.5;
+    opacity: 1;
     margin-left: 10px;
     margin-right: 10px;
 }
 .step.active {
-    opacity: 1
+    opacity: 0.5
 }
 .step.finish {
     color: #fff;
     background: var(--color-extra-dark-blue);
-    opacity: 1
+    opacity: 0.5
 }
 .all-steps {
     text-align: center;
