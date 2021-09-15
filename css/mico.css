@@ -227,11 +227,13 @@ button:focus {
     background-size: auto;
 }
 
-/* Study CSS */
-#showcase_study {
+.showcase {
     height: 100vh;
     background: url("../img/chalkboard.jpg") bottom center / cover no-repeat;
     position: relative;
+}
+#results {
+    padding-top:100px;
 }
 .about_icons {
     display: inline-flex;
