@@ -19,30 +19,12 @@ body {
     background: linear-gradient( var(--color-extra-dark-blue) 70%, var(--color-light-blue));
     font-family: var(--font-inconsolota);
 }
-button {
-    border: none;
-    background: none;
-    font-size: 2em;
-}
 
-/* Navigation CSS */
-.navbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 3;
-}
-.nav-link:hover {
-    transition: border 0.2s;
-    border-bottom: 1px solid white;
-    cursor: pointer;
-}
-.nav-item {
-    font-weight: 1000;
-}
-
-/* Font CSS */
+/* 
+========================
+    FONT/COLORS
+========================
+*/
 .font-incon {
     font-family: var(--font-inconsolota);
 }
@@ -65,7 +47,33 @@ button {
     color: var(--color-extra-light-blue);
 }
 
-/* Header CSS */
+
+/* 
+========================
+        NAVBAR
+========================
+*/
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+.nav-link:hover {
+    transition: border 0.2s;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+.nav-item {
+    font-weight: 1000;
+}
+
+/* 
+========================
+    MAIN IMAGE
+========================
+*/
 #showcase {
     height: 100vh;
     background: url("../img/desktop.jpeg") bottom center / cover no-repeat;
@@ -95,7 +103,11 @@ button {
     }
 }
 
-/* Test Customization Modal */
+/* 
+========================
+   CUSTOMIZATION MODAL
+========================
+*/
 .modal-dialog {
     margin-top: 100px;
     opacity: 0.95;
@@ -115,9 +127,6 @@ button {
 }
 #register {
     color: var(--color-extra-dark-blue);
-}
-h1 {
-    text-align: center
 }
 input {
     padding: 10px;
@@ -195,7 +204,11 @@ button:focus {
     margin-bottom: 30px
 }
 
-/* Question / Answer */
+/* 
+========================
+    QUESTIONS/ANSWERS
+========================
+*/
 .description{
     height: 30vh;
     width: 100%
@@ -216,7 +229,11 @@ button:focus {
     border-color: transparent;
 }
 
-/* About CSS */
+/* 
+========================
+        ABOUT
+========================
+*/
 #about {
     font-size: 4em;
     margin-top: 50px;
@@ -263,6 +280,11 @@ button:focus {
     padding-bottom: 100px;
 }
 
+/* 
+========================
+        ICONS
+========================
+*/
 .media_icons {
     font-size: 2.5em;
     color: var(--color-pink);

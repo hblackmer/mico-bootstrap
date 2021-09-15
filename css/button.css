@@ -1,0 +1,87 @@
+/* 
+========================
+    BUTTON ANIMATIONS
+========================
+*/
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+.test-button {
+    background: var(--color-primary);
+    color: #fff;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+ }
+ .test-button span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+ }
+ .test-button:before,
+ .test-button:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 2px;
+    background: var(--color-primary);
+ }
+ .test-button:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+ }
+ .test-button:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+ }
+ .test-button:hover{
+    color: #0275d8;
+    background: white;
+    opacity: 0.90;
+ }
+ .test-button:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+ }
+ .test-button:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+ }
+ .test-button span:before,
+ .test-button span:after {
+    position: absolute;
+    content: "";
+    background: var(--color-primary);
+ }
+ .test-button span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+ }
+ .test-button span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+ }
+ .test-button span:hover:before {
+    width: 100%;
+ }
+ .test-button span:hover:after {
+    width: 100%;
+ }
