@@ -61,8 +61,8 @@ body {
     z-index: 3;
 }
 .nav-link:hover {
-    transition: border 0.2s;
     border-bottom: 1px solid white;
+    transition: border 0.5s ease 0s;
     cursor: pointer;
 }
 .nav-item {
@@ -125,9 +125,6 @@ body {
     padding: 40px;
     border-radius: 10px
 }
-#register {
-    color: var(--color-extra-dark-blue);
-}
 input {
     padding: 10px;
     width: 100%;
@@ -154,7 +151,6 @@ button {
     border-radius: 50%;
     padding: 10px 20px;
     font-size: 17px;
-    font-family: Raleway;
     cursor: pointer
 }
 button:hover {
@@ -244,7 +240,6 @@ button:focus {
     background-repeat: no-repeat;
     background-size: auto;
 }
-
 .showcase {
     height: 100vh;
     background: url("../img/chalkboard.jpg") bottom center / cover no-repeat;
@@ -263,6 +258,12 @@ button:focus {
     margin-top: -3rem;
     border-radius: 0.5rem;
     padding-bottom: 100px;
+}
+.about_icons {
+    transition: transform 0.5s ease 0s;
+}
+.about_icons:hover {  
+    transform: scale3d(1.25, 1.25, 1);
 }
 .about_img {
     width: 200px;
@@ -289,8 +290,14 @@ button:focus {
     font-size: 2.5em;
     color: var(--color-pink);
     margin-right: 25px;
+    transition: transform 0.5s ease 0s;
 }
 .hb_logo {
     max-width: 45px;
     margin-right: 25px;
+    transition: transform 0.5s ease 0s;
+    margin-bottom: 15px;
  }
+.media_icons:hover, .hb_logo:hover {  
+    transform: scale3d(1.5, 1.5, 1);
+}
