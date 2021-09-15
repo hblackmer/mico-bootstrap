@@ -1,8 +1,10 @@
 $(function () {
+    /* Hide/show test customization modal */
     $('#testButton').click(function () {
         $('#testModal').modal('show');
     });
 
+    /* Hide/show email textbox when email option is toggled */
     $('#emailOption').click(function(){
         var val = $(this).val();
         $('#hidden_content').slideToggle();
@@ -30,7 +32,6 @@ function showTab(n) {
         document.getElementById("nextBtn").innerHTML = '<i class="fa fa-angle-double-right"></i>';
         document.getElementById("nextBtn").style.display = "inline";
     }
-    fixStepIndicator(n)
 }
 
 function nextPrev(n) {
@@ -51,13 +52,6 @@ function validateForm() {
     y = x[currentTab].getElementsByTagName("input");
     if (valid) {
         document.getElementsByClassName("step")[currentTab].className += " finish";
-    } return valid;
-}
-
-function fixStepIndicator(n) {
-    let i, x = document.getElementsByClassName("step");
-    for (i = 0; i < x.length; i++) {
-        x[i].className = x[i].className.replace(" active", "");
-    } 
-    ßx[n].className += " active";
+    }
+    return valid;
 }
