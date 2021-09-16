@@ -199,6 +199,55 @@ button:focus {
     margin-top: 30px;
     margin-bottom: 30px
 }
+.toggle_radio{
+    position: relative;
+    background: rgba(255,255,255,.1);
+    margin: 4px auto;
+    overflow: hidden;
+    padding: 0 !important;
+    border-radius: 50px;
+    position: relative;
+    height: 30px;
+    width: 318px;
+}
+.toggle_radio > * {
+    float: left;
+}
+.toggle_radio input[type=radio]{
+    display: none;
+}
+.toggle_radio label{
+    color: rgba(255,255,255,.9);
+    z-index: 0;
+    display: block;
+    width: 100px;
+    height: 20px;
+    margin: 3px 3px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+}
+.toggle_option_slider{
+    width: 100px;
+    height: 23px;
+    position: absolute;
+    top: 3px;
+    border-radius: 50px;
+    transition: all .4s ease;
+}
+#first_toggle:checked ~ .toggle_option_slider{
+    background: rgba(255,255,255,.3);
+    left: 3px;
+}
+#second_toggle:checked ~ .toggle_option_slider{
+    background: rgba(255,255,255,.3);
+    left: 109px;
+}
+#third_toggle:checked ~ .toggle_option_slider{
+    background: rgba(255,255,255,.3);
+    left: 215px;
+}
 
 /* 
 ========================
