@@ -1,22 +1,12 @@
-:root {
-    --color-extra-dark-blue: #003366;
-    --color-dark-blue: #0C2746;
-    --color-blue: #22476B;
-    --color-light-blue: #406E8E;
-    --color-extra-light-blue: #5B92AB;
-    --color-primary: #0275d8;
-    --color-pink: #a16e83;
-    --color-dark-grey: #1f1f1f;
-    --font-inconsolota: 'Inconsolata', monospace;
-}
-
 body {
     background: black;
 }
 
 .dark-overlay {
-    background-color: rgba(0,0,0,0.3);
-    padding: 15px;
+    background-color: rgba(0,0,0,0.2);
+    height: 3em;
+    width: 100%;
+    position: absolute;
 }
 
 /* 
@@ -24,6 +14,12 @@ body {
     QUESTIONS/ANSWERS
 ========================
 */
+#test-showcase {
+    padding-top: 100px;
+    height: 100vh;
+    background: url("../img/chalkboard.jpg") bottom center / cover no-repeat;
+    position: relative;
+}
 .category{
     height: 10vh;
     width: 100%;
@@ -31,6 +27,7 @@ body {
 .question {
     height: 10vh;
     width: 100%;
+    margin-bottom: 100px;
 }
 .answer {
     height: 30vh;
@@ -122,4 +119,34 @@ a:hover,a:focus{
     color: black;
     line-height: 28px;
     letter-spacing: 1px;
+}
+
+/* 
+========================
+    PROGRESS BAR
+========================
+*/
+.progress {
+    background: rgba(255,255,255,0.2);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 20px;
+    width: 500px;
+}
+.progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    font-size: 1.5em;
+    background: darkgray;
+    height: 30px;
+    width: 0;
+}
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 68%; }
 }

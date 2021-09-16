@@ -7,6 +7,7 @@
     --color-primary: #0275d8;
     --color-pink: #a16e83;
     --color-dark-grey: #1f1f1f;
+    --color-green: #52cc00;
     --font-inconsolota: 'Inconsolata', monospace;
 }
 
@@ -45,6 +46,9 @@ body {
 }
 .mico-color-4 {
     color: var(--color-extra-light-blue);
+}
+.text-green {
+    color: var(--color-green);
 }
 
 /* 
@@ -262,11 +266,6 @@ button:focus {
     background: url("../img/question.jpg");
     background-repeat: no-repeat;
     background-size: auto;
-}
-.showcase {
-    height: 100vh;
-    background: url("../img/chalkboard.jpg") bottom center / cover no-repeat;
-    position: relative;
 }
 #results {
     padding-top:100px;
