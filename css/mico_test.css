@@ -8,13 +8,19 @@ body {
     width: 100%;
     position: absolute;
 }
+.dark-overlay-2 {
+    background-color: rgba(0,0,0,0.3);
+    height: 90%;
+    width: 95%;
+    position: absolute;
+}
 
 /* 
 ========================
     QUESTIONS/ANSWERS
 ========================
 */
-#test-showcase {
+.test-showcase {
     padding-top: 100px;
     height: 100vh;
     background: url("../img/chalkboard.jpg") bottom center / cover no-repeat;
@@ -25,9 +31,9 @@ body {
     width: 100%;
 }
 .question {
-    height: 10vh;
+    height: 5vh;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .answer {
     height: 30vh;
@@ -43,7 +49,7 @@ body {
 
 /* 
 ========================
-    RESULTS PAGE
+    QUESTION TIMER
 ========================
 */
 #time {
@@ -58,6 +64,9 @@ body {
     RESULTS PAGE
 ========================
 */
+a {
+    text-decoration: none;
+}
 a:hover,a:focus{
     text-decoration: none;
     outline: none;
@@ -118,7 +127,7 @@ a:hover,a:focus{
 }
 #accordion .panel-title a.collapsed:before{
     content: "\f105";
-    background: black;
+    background: #444444;
     border: 1px solid var(--color-primary);
     color: white;
 }
@@ -160,5 +169,5 @@ a:hover,a:focus{
 }
 @keyframes load {
     0% { width: 0; }
-    100% { width: 68%; }
+    100% { width: 60%; }
 }

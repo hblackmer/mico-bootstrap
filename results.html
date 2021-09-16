@@ -97,22 +97,27 @@
     </div>
 
     <!-- Results -->
-    <section id="results" class="showcase d-flex justify-content-center">
+    <section id="results" class="test-showcase d-flex justify-content-center">
+        <div class="dark-overlay-2"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <h4 class="text-green text-center font-incon my-4">Your Questions and Answers:</h4>
+            </div>
+            <div class="row">
+                <div class="col">
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
                                     <a class="collapsed text-white" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Question 1
+                                        <span class="text-primary">CSS:</span> What is the difference between “display: none” and “visibility: hidden”?
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body text-white">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+                                    <p>display:none removes the element from the normal flow of the page, allowing other elements to fill in.<br>
+                                    visibility:hidden leaves the element in the normal flow of the page such that is still occupies space. </p>
                                 </div>
                             </div>
                         </div>
@@ -120,13 +125,13 @@
                             <div class="panel-heading" role="tab" id="headingTwo">
                                 <h4 class="panel-title">
                                     <a class="collapsed text-white" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Question 2
+                                        <span class="text-primary">HTML:</span>  What is the difference between HTML elements and tags?
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body text-white">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+                                    <p>HTML elements communicate to the browser to render text. When the elements are enclosed by brackets &#60;&#62;, they form HTML tags. Most of the time, tags come in a pair and surround content. </p>
                                 </div>
                             </div>
                         </div>
@@ -134,13 +139,41 @@
                             <div class="panel-heading" role="tab" id="headingThree">
                                 <h4 class="panel-title">
                                     <a class="collapsed text-white"" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"  class="text-white">
-                                        Question 3
+                                        <span class="text-primary">CSS:</span> What are CSS selectors?
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body text-white">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+                                    <p>A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed text-white" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <span class="text-primary">JavaScript:</span>  What is ‘this’ keyword in JavaScript?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body text-white">
+                                    <p>‘This’ keyword refers to the object from where it was called.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed text-white" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <span class="text-primary">JavaScript:</span> What is a NULL value?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body text-white">
+                                    <p>The NULL value is used to represent no value or no object. It implies no object or null string, no valid boolean value, no number, and no array object.</p>
                                 </div>
                             </div>
                         </div>
