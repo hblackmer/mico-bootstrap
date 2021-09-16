@@ -13,6 +13,42 @@
 body {
     background: black;
 }
+
+.dark-overlay {
+    background-color: rgba(0,0,0,0.3);
+    padding: 15px;
+}
+
+/* 
+========================
+    QUESTIONS/ANSWERS
+========================
+*/
+.category{
+    height: 10vh;
+    width: 100%;
+}
+.question {
+    height: 10vh;
+    width: 100%;
+}
+.answer {
+    height: 30vh;
+    width: 100%;
+}
+.arrow-size {
+    font-size: 1.5rem;
+    border-color: transparent;
+}
+.arrow-size:hover {
+    border-color: transparent;
+}
+
+/* 
+========================
+    RESULTS PAGE
+========================
+*/
 a:hover,a:focus{
     text-decoration: none;
     outline: none;

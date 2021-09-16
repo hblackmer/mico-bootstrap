@@ -47,7 +47,6 @@ body {
     color: var(--color-extra-light-blue);
 }
 
-
 /* 
 ========================
         NAVBAR
@@ -247,31 +246,6 @@ button:focus {
 #third_toggle:checked ~ .toggle_option_slider{
     background: rgba(255,255,255,.3);
     left: 215px;
-}
-
-/* 
-========================
-    QUESTIONS/ANSWERS
-========================
-*/
-.description{
-    height: 30vh;
-    width: 100%
-}
-.question {
-    height: 20vh;
-    width: 100%
-}
-.answer {
-    height: 30vh;
-    width: 100%
-}
-.arrow-size {
-    font-size: 1.5rem;
-    border-color: transparent;
-}
-.arrow-size:hover {
-    border-color: transparent;
 }
 
 /* 
