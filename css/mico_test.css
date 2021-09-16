@@ -27,7 +27,7 @@ body {
 .question {
     height: 10vh;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 .answer {
     height: 30vh;
@@ -39,6 +39,18 @@ body {
 }
 .arrow-size:hover {
     border-color: transparent;
+}
+
+/* 
+========================
+    RESULTS PAGE
+========================
+*/
+#time {
+    display: none;
+}
+#answer-textarea {
+    display: none;
 }
 
 /* 

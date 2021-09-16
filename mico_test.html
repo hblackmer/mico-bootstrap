@@ -111,7 +111,9 @@
                         <h2 class="row fs-3 text-primary">Question: </h2>
                         <h4 class="row text-white">Describe the different CSS transition timing functions.</h4>
                     </div>
-                    <form class="answer_textarea">
+                    <div id="time" class="text-green text-center h3"><i class="fas fa-stopwatch"></i> 00:00:00</div>
+                    <button type="submit" class="btn btn-primary" id="start_btn">START</button>
+                    <form id="answer-textarea">
                         <div class="row form-group mt-3">
                             <label for="feedback" class="row col-form-label fs-3 text-primary">Answer:</label>
                             <div class="row">
@@ -137,6 +139,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Timer JavaScript -->
+    <script src="js/timer.js"></script>
 </body>
 
 <footer class="container">
