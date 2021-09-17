@@ -67,9 +67,6 @@ input {
     border: 1px solid var(--color-primary) !important;
     outline: none
 }
-input.invalid {
-    border: 1px solid #e03a0666
-}
 .tab {
     display: none
 }
@@ -180,7 +177,7 @@ button:focus {
 
 /* 
 ========================
-        ABOUT
+       ABOUT CARDS
 ========================
 */
 #about {
