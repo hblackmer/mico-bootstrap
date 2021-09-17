@@ -1,0 +1,230 @@
+/* 
+========================
+    MAIN IMAGE
+========================
+*/
+.showcase {
+    height: 100vh;
+    background: url("../img/desktop.jpeg") bottom center / cover no-repeat;
+    position: relative;
+}
+#header {
+    z-index: 2;
+}
+#overlay {
+    background: rgba(0,0,0,0.15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#header-name {
+    font-size: 7.5em;
+}
+@media(max-width: 768px) {
+    .navbar {
+        background: var(--color-dark-grey);
+    }
+    #showcase {
+        min-height: 300px;
+    }
+}
+
+/* 
+========================
+   CUSTOMIZATION MODAL
+========================
+*/
+.modal-dialog {
+    margin-top: 100px;
+    opacity: 0.95;
+}
+.modal-header {
+    background-color: var(--color-extra-dark-blue); 
+    color: white;
+}
+.modal-body {
+    background: linear-gradient( var(--color-extra-dark-blue) 10%, var(--color-light-blue));
+}
+#regForm {
+    margin: 0px auto;
+    font-family: Raleway;
+    padding: 40px;
+    border-radius: 10px
+}
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    -webkit-appearance: none
+}
+.tab input:focus {
+    border: 1px solid var(--color-primary) !important;
+    outline: none
+}
+input.invalid {
+    border: 1px solid #e03a0666
+}
+.tab {
+    display: none
+}
+button {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer
+}
+button:hover {
+    opacity: 0.8
+}
+button:focus {
+    outline: none !important
+}
+#prevBtn {
+    background-color: #bbbbbb
+}
+.all-steps {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center
+}
+.step {
+    height: 60px;
+    width: 60px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: var(--color-extra-dark-blue);
+    opacity: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.step.active {
+    opacity: 0.5
+}
+.step.finish {
+    color: #fff;
+    background: var(--color-extra-dark-blue);
+    opacity: 0.5
+}
+.all-steps {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+.toggle_radio{
+    position: relative;
+    background: rgba(255,255,255,.1);
+    margin: 4px auto;
+    overflow: hidden;
+    padding: 0 !important;
+    border-radius: 50px;
+    position: relative;
+    height: 30px;
+    width: 318px;
+}
+.toggle_radio > * {
+    float: left;
+}
+.toggle_radio input[type=radio]{
+    display: none;
+}
+.toggle_radio label{
+    color: rgba(255,255,255,.9);
+    z-index: 0;
+    display: block;
+    width: 100px;
+    height: 20px;
+    margin: 3px 3px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+}
+.toggle_option_slider{
+    width: 100px;
+    height: 23px;
+    position: absolute;
+    top: 3px;
+    border-radius: 50px;
+    transition: all .4s ease;
+}
+#first_toggle:checked ~ .toggle_option_slider{
+    background: rgba(255,255,255,.3);
+    left: 3px;
+}
+#second_toggle:checked ~ .toggle_option_slider{
+    background: rgba(255,255,255,.3);
+    left: 109px;
+}
+#third_toggle:checked ~ .toggle_option_slider{
+    background: rgba(255,255,255,.3);
+    left: 215px;
+}
+
+/* 
+========================
+        ABOUT
+========================
+*/
+#about {
+    font-size: 4em;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+#showcase_about {
+    background: url("../img/question.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#results {
+    padding-top:100px;
+}
+.about_icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    margin-top: -3rem;
+    border-radius: 0.5rem;
+    padding-bottom: 100px;
+}
+.about_icons {
+    transition: transform 0.5s ease 0s;
+}
+.about_icons:hover {  
+    transform: scale3d(1.25, 1.25, 1);
+}
+.about_img {
+    width: 200px;
+    height: 150px;
+    border: 5px solid #5B92AB;
+    border-radius: 0.5rem;
+}
+.about-bg {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 50px;
+    opacity: 0.8;
+    margin-bottom: -3.5rem;
+}
+.about-cards {
+    padding-bottom: 100px;
+}
