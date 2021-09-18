@@ -6,7 +6,7 @@ $(function () {
 
     /* Hide/show email textbox when email option is toggled */
     $('#emailOption').click(function(){
-        var val = $(this).val();
+        let val = $(this).val();
         $('#hidden_content').slideToggle();
     });
 });
